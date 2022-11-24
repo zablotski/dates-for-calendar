@@ -1,4 +1,4 @@
-const getDatesRange = (startDate, endDate) => {
+export const getDatesRange = (startDate: string | number | Date, endDate: string | number | Date) => {
   let result = [];
 
   for (
@@ -12,7 +12,7 @@ const getDatesRange = (startDate, endDate) => {
   return result;
 };
 
-const getFirstDayOfWeek = (date, firstDayOfWeek = 1) => {
+export const getFirstDayOfWeek = (date: Date, firstDayOfWeek = 1) => {
   const day = date.getDay();
   const diff = (day < firstDayOfWeek ? 7 : 0) + day - firstDayOfWeek;
 
@@ -21,7 +21,7 @@ const getFirstDayOfWeek = (date, firstDayOfWeek = 1) => {
   return date;
 };
 
-const getLastDayOfWeek = (date, firstDayOfWeek = 1) => {
+export const getLastDayOfWeek = (date: Date, firstDayOfWeek = 1) => {
   const day = date.getDay();
   const diff = (day < firstDayOfWeek ? -7 : 0) + 6 - (day - firstDayOfWeek);
 
@@ -31,7 +31,7 @@ const getLastDayOfWeek = (date, firstDayOfWeek = 1) => {
   return date;
 };
 
-const getCalendarDates = (year, month) => {
+export const getCalendarDates = (year: number, month: number) => {
   const firstDayOfMonth = new Date(year, month, 1);
   const lastDayOfMonth = new Date(
     firstDayOfMonth.getFullYear(),
@@ -45,9 +45,4 @@ const getCalendarDates = (year, month) => {
   );
 };
 
-module.exports = {
-  getFirstDayOfWeek,
-  getDatesRange,
-  getLastDayOfWeek,
-  getCalendarDates,
-};
+

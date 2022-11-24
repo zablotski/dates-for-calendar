@@ -1,20 +1,20 @@
 # dates-for-calendar
 Set of Date tools for calendar implementations
 
-# Available methods: 
+## Available methods: 
 
-`getDatesRange(startDate, endDate)` 
+`getDatesRange: (startDate: string | number | Date, endDate: string | number | Date) => Date[]` 
 
-    returns array of dates between startDate and endDate
+returns array of dates between startDate and endDate
 
-`getFirstDayOfWeek(date, firstDayOfWeek = 1)`
+`getFirstDayOfWeek: (date: Date, firstDayOfWeek?: number) => Date`
 
-    returns first day of week, Monday is the first day of week by default
+returns first day of week, Monday is the first day of week by default
 
-`getLastDayOfWeek(date, firstDayOfWeek = 1)`
+`getLastDayOfWeek: (date: Date, firstDayOfWeek?: number) => Date`
 
-    returns last day of week, Monday is the first day of week by default
+returns last day of week, Monday is the first day of week by default
 
-`getCalendarDates(yearNumber, monthNumber) // 0 is January` 
+`getCalendarDates: (year: number, month: number) => Date[] // 0 is January` 
 
-    returns array of days for month calendar view (matrix)
+returns array of days for month calendar view (matrix)

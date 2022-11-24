@@ -1,9 +1,9 @@
-const {
+import {
   getCalendarDates,
   getDatesRange,
   getFirstDayOfWeek,
   getLastDayOfWeek,
-} = require("./index");
+} from "./index";
 
 describe("dates for calendar:", () => {
   test("should get calendar dates for given month ", () => {
