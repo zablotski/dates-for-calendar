@@ -1,9 +1,9 @@
-const getDatesRange = (start, end) => {
+const getDatesRange = (startDate, endDate) => {
   let result = [];
 
   for (
-    let date = new Date(start);
-    date <= new Date(end);
+    let date = new Date(startDate);
+    date <= new Date(endDate);
     date.setDate(date.getDate() + 1)
   ) {
     result.push(new Date(date));
