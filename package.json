@@ -1,0 +1,38 @@
+{
+  "name": "dates-for-calendar",
+  "version": "1.0.0",
+  "description": "Set of Date tools for calendar implementations",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zablotski/dates-for-calendar.git"
+  },
+  "keywords": [
+    "calendar",
+    "date",
+    "year",
+    "week",
+    "day",
+    "last",
+    "day",
+    "first",
+    "day",
+    "month",
+    "view"
+  ],
+  "author": "Yauheni Zablotski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zablotski/dates-for-calendar/issues"
+  },
+  "homepage": "https://github.com/zablotski/dates-for-calendar#readme",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^29.3.1"
+  }
+}
